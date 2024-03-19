@@ -1,7 +1,12 @@
+from entities.ListaEncadeada import ListaEncadeada
 
-def print_hi(name):
-    print(f'Hi, {name}')
+lista = ListaEncadeada()
+lista.inserirFim(14)
+lista.inserirFim(12133)
+lista.inserirFim(11233)
+lista.inserirFim(1134)
+lista.inserirFim(12123)
+lista.inserirFim(11)
+lista.inserirFim(12134)
 
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
+lista.mostrarLista()
