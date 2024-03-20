@@ -29,6 +29,15 @@ class ListaEncadeada:
 
     def exclusao(self, valor):
         aux = self.busca(valor)
+        if aux is not None:
+            nodo = self.primeiro
+            if nodo is not aux:
+                while nodo.proximo is not aux:
+                    nodo = nodo.proximo
+                nodo.proximo = aux.proximo
+            else:
+                self.primeiro = aux.proximo
+            aux = None
 
 
     def mostrarLista(self):
