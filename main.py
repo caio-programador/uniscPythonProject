@@ -8,5 +8,5 @@ lista.inserirFim(3)
 lista.inserirFim(4)
 lista.mostrarLista()
 
-lista.exclusao(5)
+lista.exclusao(2)
 lista.mostrarLista()

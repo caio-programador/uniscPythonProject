@@ -39,7 +39,6 @@ class ListaEncadeada:
                 self.primeiro = aux.proximo
             aux = None
 
-
     def mostrarLista(self):
         if self.primeiro is not None:
             x = self.primeiro
