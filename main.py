@@ -1,6 +1,7 @@
 from entities.ListaEncadeada import ListaEncadeada
 
 lista = ListaEncadeada()
+
 lista.inserirFim(14)
 lista.inserirFim(12133)
 lista.inserirFim(11233)

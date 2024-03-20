@@ -10,16 +10,32 @@ class ListaEncadeada:
         if self.primeiro is None:
             self.primeiro = novoNo
         else:
-            x = self.primeiro
-            while x.proximo is not None:
-                x = x.proximo
+            aux = self.primeiro
+            while aux.proximo is not None:
+                aux = aux.proximo
 
-            x.proximo = novoNo
-        print(f'Show!!! {novoNo.mostrarNo()} Inserido!!!')
+            aux.proximo = novoNo
+
+    def busca(self, valor):
+        if self.primeiro is not None:
+            aux = self.primeiro
+            while aux is not None:
+                if aux.valor is valor:
+                    return aux
+                aux = aux.proximo
+            print("Não achou")
+        else:
+            print("Não tem nada na lista")
+
+    def exclusao(self, valor):
+        aux = self.busca(valor)
 
 
     def mostrarLista(self):
-        x = self.primeiro
-        while x.proximo is not None:
-            print(x.mostrarNo())
-            x = x.proximo
+        if self.primeiro is not None:
+            x = self.primeiro
+            while x is not None:
+                x.mostrarNo()
+                x = x.proximo
+        else:
+            print("Lista vazia")
