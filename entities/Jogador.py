@@ -5,4 +5,4 @@ class Jogador:
         self.posicao = posicao
 
     def relatorioJogador(self):
-        print(f'Nome: {self.nome} | Número da Camisa: {self.numeroCamisa} | Posição: {self.posicao}')
+        print(f'Posição: {self.posicao} | Número da Camisa: {self.numeroCamisa} | Nome: {self.nome}')

@@ -1,9 +1,9 @@
-from entities.Time import Time
+from entities.Elenco import Elenco
 from time import sleep
 
 
-def menu(time):
-    print(f'Gerencie o {time.nome} aqui:')
+def menu(elenco):
+    print(f'Gerencie o {elenco.nome} aqui:')
     print("1 - Novo jogador para o elenco")
     print("2 - Buscar jogador pelo número da camisa")
     print("3 - Rescindir contrato de jogador")
@@ -12,50 +12,55 @@ def menu(time):
     print("0 - Fechar programa")
 
 
-def insere(time):
+def insere(elenco):
     nome = input("Nome do jogador: ")
     numeroCamisa = int(input("Número da camisa: "))
-    posicao = input("Posição: ")
-    time.inserirJogador(nome, numeroCamisa, posicao)
+    posicao = input("Posição (GOLEIRO, DEFENSOR, MEIO CAMPO, ATACANTE): ").upper()
+    elenco.inserirJogador(nome, numeroCamisa, posicao)
 
 
-def buscarJogador(time):
+def buscarJogador(elenco):
     numeroCamisa = int(input("Informe o número da camisa do jogador que deseja buscar: "))
-    jogador = time.buscarJogador(numeroCamisa)
+    jogador = elenco.buscarJogador(numeroCamisa)
     if jogador is None:
         print("Nenhum jogador com este número existe!")
     else:
         jogador.jogador.relatorioJogador()
 
 
-def editarNumero(time):
+def editarNumero(elenco):
     numeroCamisa = int(input("Informe o número da camisa do jogador que deseja editar: "))
-    jogador = time.buscarJogador(numeroCamisa)
+    jogador = elenco.buscarJogador(numeroCamisa)
     if jogador is None:
         print("Nenhum jogador com este número existe!")
     else:
-        jogador.numeroCamisa = int(input("Novo número do jogador: "))
+        novoNumeroCamisa = int(input("Novo número do jogador: "))
+        if novoNumeroCamisa > 100 or novoNumeroCamisa < 1 or elenco.buscarJogador(novoNumeroCamisa) is not None:
+            print("Número de camisa inválido")
+            return
+
+        jogador.jogador.numeroCamisa = novoNumeroCamisa
         print("Jogador alterado com sucesso")
 
 
 def main():
     nome = input("Bem vindo! Qual seu nome? ")
-    time = Time(input(f'{nome}, qual o nome do seu time? '))
+    elenco = Elenco(input(f'{nome}, qual o nome do seu elenco? '))
     sleep(0.6)
     while True:
-        menu(time)
+        menu(elenco)
         option = int(input())
         if option == 1:
-            insere(time)
+            insere(elenco)
         elif option == 2:
-            buscarJogador(time)
+            buscarJogador(elenco)
         elif option == 3:
             numeroCamisa = int(input("Informe o número da camisa do jogador que deseja rescindir o contrato: "))
-            time.rescindirContrato(numeroCamisa)
+            elenco.rescindirContrato(numeroCamisa)
         elif option == 4:
-            editarNumero(time)
+            editarNumero(elenco)
         elif option == 5:
-            time.relatorioElenco()
+            elenco.relatorioElenco()
         elif option == 0:
             print("Encerrando programa...")
             break
@@ -64,4 +69,3 @@ def main():
 
 
 main()
-
