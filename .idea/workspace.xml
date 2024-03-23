@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f5961-f20d-4a79-b48b-1a0eb9ea4e55" name="Changes" comment="método exclui">
+    <list default="true" id="580f5961-f20d-4a79-b48b-1a0eb9ea4e55" name="Changes" comment="detalhes">
+      <change afterPath="$PROJECT_DIR$/entities/Jogador.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/ListaEncadeada.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/No.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/No.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +30,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2dvU5CCazIZUGL6aye90sjlNTE6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,7 +78,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -125,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710895770606</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="detalhes">
+      <option name="closed" value="true" />
+      <created>1710902570241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710902570242</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,7 +147,8 @@
     <MESSAGE value="second" />
     <MESSAGE value="fazendo método busca e insere no fim" />
     <MESSAGE value="método exclui" />
-    <option name="LAST_COMMIT_MESSAGE" value="método exclui" />
+    <MESSAGE value="detalhes" />
+    <option name="LAST_COMMIT_MESSAGE" value="detalhes" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

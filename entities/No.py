@@ -1,7 +1,7 @@
 class No:
-    def __init__(self, valor):
-        self.valor = int(valor)
+    def __init__(self, jogador):
+        self.jogador = jogador
         self.proximo = None
 
     def mostrarNo(self):
-        print(self.valor)
+        print(self.jogador)
