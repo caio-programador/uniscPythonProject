@@ -1,5 +1,8 @@
+import random
+
 from entities.Jogador import Jogador
 from entities.No import No
+from faker import Faker
 
 
 class Elenco:
@@ -73,3 +76,25 @@ class Elenco:
                 x = x.proximo
         else:
             print("Elenco vazio")
+
+    def geararDados(self):
+        faker = Faker()
+        numeroEmUso = set() # set é um Conjunto sem elementos duplicados
+
+        for i in range(11):
+            # adiciona apenas 1 goleiro
+            if i == 0:
+                posicao = "GOLEIRO"
+            else:
+                posicao = random.choice(["DEFENSOR", "MEIO CAMPO", "ATACANTE"])
+
+
+            nome = faker.name()
+            numeroCamisa = random.randint(1, 99)
+            while numeroCamisa in numeroEmUso:
+                numeroCamisa = random.randint(1, 99)
+            numeroEmUso.add(numeroCamisa)
+
+            self.inserirJogador(nome, numeroCamisa, posicao)
+
+        print("\nDados inseridos com sucesso!\n")

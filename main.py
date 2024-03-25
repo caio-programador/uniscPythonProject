@@ -9,6 +9,7 @@ def menu(elenco):
     print("3 - Rescindir contrato de jogador")
     print("4 - Mudar número de jogador")
     print("5 - Relatório de elenco")
+    print("6 - Gerar o elenco automaticamente")
     print("0 - Fechar programa")
 
 
@@ -45,7 +46,7 @@ def editarNumero(elenco):
 
 def main():
     nome = input("Bem vindo! Qual seu nome? ")
-    elenco = Elenco(input(f'{nome}, qual o nome do seu elenco? '))
+    elenco = Elenco(input(f'{nome}, qual o nome do seu time? '))
     sleep(0.6)
     while True:
         menu(elenco)
@@ -61,6 +62,8 @@ def main():
             editarNumero(elenco)
         elif option == 5:
             elenco.relatorioElenco()
+        elif option == 6:
+            elenco.geararDados()
         elif option == 0:
             print("Encerrando programa...")
             break
