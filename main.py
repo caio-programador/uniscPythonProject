@@ -10,6 +10,7 @@ def menu(elenco):
     print("4 - Mudar número de jogador")
     print("5 - Relatório de elenco")
     print("6 - Gerar o elenco automaticamente")
+    print("7 - Ordenar elenco")
     print("0 - Fechar programa")
 
 
@@ -21,18 +22,18 @@ def insere(elenco):
 
 
 def buscarJogador(elenco):
-    numeroCamisa = int(input("Informe o número da camisa do jogador que deseja buscar: "))
-    jogador = elenco.buscarJogador(numeroCamisa)
-    if jogador is None:
-        print("Nenhum jogador com este número existe!")
+    numeroCamisa = int(input("Informe o número da camisa do aux que deseja buscar: "))
+    aux = elenco.buscarJogador(numeroCamisa)
+    if aux is None:
+        print("Nenhum aux com este número existe!")
     else:
-        jogador.jogador.relatorioJogador()
+        aux.jogador.relatorioJogador()
 
 
 def editarNumero(elenco):
     numeroCamisa = int(input("Informe o número da camisa do jogador que deseja editar: "))
-    jogador = elenco.buscarJogador(numeroCamisa)
-    if jogador is None:
+    aux = elenco.buscarJogador(numeroCamisa)
+    if aux is None:
         print("Nenhum jogador com este número existe!")
     else:
         novoNumeroCamisa = int(input("Novo número do jogador: "))
@@ -40,7 +41,7 @@ def editarNumero(elenco):
             print("Número de camisa inválido")
             return
 
-        jogador.jogador.numeroCamisa = novoNumeroCamisa
+        aux.jogador.numeroCamisa = novoNumeroCamisa
         print("Jogador alterado com sucesso")
 
 
@@ -63,7 +64,10 @@ def main():
         elif option == 5:
             elenco.relatorioElenco()
         elif option == 6:
-            elenco.geararDados()
+            elenco.gerarDados()
+        elif option == 7:
+            elenco.ordena()
+            elenco.relatorioElenco()
         elif option == 0:
             print("Encerrando programa...")
             break

@@ -9,6 +9,12 @@ class Elenco:
     def __init__(self, nome):
         self.nome = nome
         self.primeiro = None
+        self.POSICOES_PRIORIDADE = {
+            "ATACANTE": 1,
+            "MEIO CAMPO": 2,
+            "DEFENSOR": 3,
+            "GOLEIRO": 4
+        }
 
     def inserirJogador(self, nome, numeroCamisa, posicao):  # inserir
         if posicao not in ("GOLEIRO", "DEFENSOR", "MEIO CAMPO", "ATACANTE"):
@@ -77,9 +83,9 @@ class Elenco:
         else:
             print("Elenco vazio")
 
-    def geararDados(self):
+    def gerarDados(self):
         faker = Faker()
-        numeroEmUso = set() # set é um Conjunto sem elementos duplicados
+        numeroEmUso = set()  # set é um Conjunto sem elementos duplicados
 
         for i in range(11):
             # adiciona apenas 1 goleiro
@@ -87,7 +93,6 @@ class Elenco:
                 posicao = "GOLEIRO"
             else:
                 posicao = random.choice(["DEFENSOR", "MEIO CAMPO", "ATACANTE"])
-
 
             nome = faker.name()
             numeroCamisa = random.randint(1, 99)
@@ -98,3 +103,31 @@ class Elenco:
             self.inserirJogador(nome, numeroCamisa, posicao)
 
         print("\nDados inseridos com sucesso!\n")
+
+    def ordena(self):
+        if self.primeiro is None:
+            print("Elenco vazio")
+            return
+
+        if self.primeiro.proximo is None:
+            print("Temos apenas um jogador no elenco")
+            return
+
+        anterior = self.primeiro
+
+        while anterior.proximo is not None:
+            atual = anterior.proximo
+            while atual is not None:
+                comparaPosicao = (self.POSICOES_PRIORIDADE[anterior.jogador.posicao] >
+                                  self.POSICOES_PRIORIDADE[atual.jogador.posicao])
+                comparaNumero = atual.jogador.numeroCamisa < anterior.jogador.numeroCamisa
+
+                if comparaPosicao or (comparaNumero and self.POSICOES_PRIORIDADE[anterior.jogador.posicao] ==
+                      self.POSICOES_PRIORIDADE[atual.jogador.posicao]):
+                    temp = atual.jogador
+                    atual.jogador = anterior.jogador
+                    anterior.jogador = temp
+                atual = atual.proximo
+            anterior = anterior.proximo
+
+        print("Elenco ordenado")

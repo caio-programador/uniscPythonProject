@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f5961-f20d-4a79-b48b-1a0eb9ea4e55" name="Changes" comment="fazendo o MAIOR TIME">
+    <list default="true" id="580f5961-f20d-4a79-b48b-1a0eb9ea4e55" name="Changes" comment="merge na Main">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uniscPythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uniscPythonProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/Jogador.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Jogador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/Time.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Elenco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/Elenco.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Elenco.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -41,7 +47,8 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;ordena&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/caio/Documents/projects/uniscPythonProject&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -146,8 +153,27 @@
       <option name="project" value="LOCAL" />
       <updated>1711220882633</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="merge na Main">
+      <option name="closed" value="true" />
+      <created>1711404010401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711404010402</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
@@ -155,8 +181,10 @@
     <MESSAGE value="fazendo método busca e insere no fim" />
     <MESSAGE value="método exclui" />
     <MESSAGE value="detalhes" />
+    <MESSAGE value="funcao de gerar dados" />
     <MESSAGE value="fazendo o MAIOR TIME" />
-    <option name="LAST_COMMIT_MESSAGE" value="fazendo o MAIOR TIME" />
+    <MESSAGE value="merge na Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge na Main" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
