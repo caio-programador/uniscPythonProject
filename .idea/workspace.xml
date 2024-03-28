@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f5961-f20d-4a79-b48b-1a0eb9ea4e55" name="Changes" comment="merge na Main">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uniscPythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uniscPythonProject.iml" afterDir="false" />
+    <list default="true" id="580f5961-f20d-4a79-b48b-1a0eb9ea4e55" name="Changes" comment="fazendo a função ordena (ordena por posição e depois por número)">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/Elenco.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Elenco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ordena&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/caio/Documents/projects/uniscPythonProject&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "ordena",
+    "last_opened_file_path": "/home/caio/Documents/projects/uniscPythonProject"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/entities" />
@@ -161,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711404010402</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fazendo a função ordena (ordena por posição e depois por número)">
+      <option name="closed" value="true" />
+      <created>1711595994852</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711595994852</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +194,8 @@
     <MESSAGE value="funcao de gerar dados" />
     <MESSAGE value="fazendo o MAIOR TIME" />
     <MESSAGE value="merge na Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge na Main" />
+    <MESSAGE value="fazendo a função ordena (ordena por posição e depois por número)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fazendo a função ordena (ordena por posição e depois por número)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
